@@ -1,0 +1,3 @@
+OLD_STATE: <%- JSON.stringify(OLD_STATE) %>
+TRANSITION: <%- TRANSITION %>
+NEW_STATE: 

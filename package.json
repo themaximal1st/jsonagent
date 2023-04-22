@@ -1,10 +1,10 @@
 {
   "name": "jsonagent",
   "version": "0.0.1",
-  "description": "An evolving JSON data-structure that using gpt-4 to update itself",
+  "description": "An evolving JSON data-structure that uses gpt-4 to update itself",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/themaximal1st/jsonagent/issues"
   },
-  "homepage": "https://github.com/themaximal1st/jsonagent#readme"
+  "homepage": "https://github.com/themaximal1st/jsonagent#readme",
+  "dependencies": {
+    "@themaximalist/llm.js": "^0.1.2"
+  },
+  "devDependencies": {
+    "@themaximalist/prompt.js": "^0.0.3"
+  }
 }
