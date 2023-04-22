@@ -30,11 +30,11 @@ class JSONAgent {
             response = await this.agent.twoshot(user_prompt);
         }
 
-        // YOLO
+        // YOLO CODE: https://themaximalist.com/infinityarcade/
         const lines = response.split("\n");
         for (const line of lines) {
             try {
-                const new_state = JSON.parse(response);
+                const new_state = JSON.parse(line);
                 this.states.push(new_state);
                 return this.state;
             } catch (e) {

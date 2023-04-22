@@ -19,6 +19,6 @@ const JSONAgent = require("./index");
 
     for (let i = 0; i < 5; i++) {
         console.log(agent.state);
-        await agent.transition("Expand task list based on OLD_STATE")
+        await agent.transition("Expand task list")
     }
 })();

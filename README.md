@@ -23,6 +23,22 @@ console.log(agent.state);
 await agent.transition("increment x"); // { x: 1 }
 ```
 
+Or try an evolving task list:
+
+```javascript
+// evolving task list
+const agent = new JSONAgent({
+  tasks: [
+      "Start a profitable business",
+  ]
+});
+
+for (let i = 0; i < 5; i++) {
+    console.log(agent.state);
+    await agent.transition("Expand task list")
+}
+```
+
 
 
 ## ✅ Configuration
@@ -47,7 +63,7 @@ const agent = new JSONAgent(initialState);
 
 #### Methods
 
-- `transition(input)`: Accepts an input string (and an optional transition prompt), then performs a state transition based on the input and updates the JSON data structure.
+- `transition(input, history=false)`: Accepts an input string (and an optional `history` parameter to send entire history context), then performs a state transition based on the input and updates the JSON data structure.
 
 #### Properties
 
@@ -58,6 +74,12 @@ const agent = new JSONAgent(initialState);
 ## ⁉️ Will this actually work?
 
 Maybe, it seems to sometimes. Try it out and let me know what you find.
+
+
+
+## TODO
+
+* Rollback to `history=true` in case of failure, backoff
 
 
 
