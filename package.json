@@ -1,0 +1,28 @@
+{
+  "name": "jsonagent",
+  "version": "0.0.1",
+  "description": "An evolving JSON data-structure that using gpt-4 to update itself",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themaximal1st/jsonagent.git"
+  },
+  "keywords": [
+    "json",
+    "data-structure",
+    "llm",
+    "openai",
+    "gpt-3-5-turbo",
+    "gpt-4",
+    "agent"
+  ],
+  "author": "The Maximalist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themaximal1st/jsonagent/issues"
+  },
+  "homepage": "https://github.com/themaximal1st/jsonagent#readme"
+}
